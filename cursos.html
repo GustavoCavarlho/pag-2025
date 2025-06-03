@@ -16,10 +16,30 @@
         <div class="form-container">
             <form class="contactFrom">
                 <label for="nome">Nome</label>
-                <label for="idade">idade</label>
+                <input type="text" id="nome" required>
+
+                <label for="email">Email:</label>
+                <input taype="text" id="email" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea type="text" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
+
+    
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
     
 </body>
 </html>
